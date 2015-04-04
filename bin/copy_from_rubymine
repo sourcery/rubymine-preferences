@@ -1,0 +1,21 @@
+#!/bin/bash
+# Copies the RubyMine preference files that we're tracking from the RubyMine preferences directory to this local repo.
+
+RUBYMINE_PREFS_DIR=$HOME/Library/Preferences/RubyMine70
+
+BIN_DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+LOCAL_PREFS_DIR="$BIN_DIR/../RubyMine70"
+
+cp "$RUBYMINE_PREFS_DIR/codestyles/sourcery.xml"        "$LOCAL_PREFS_DIR/codestyles/sourcery.xml"        
+cp "$RUBYMINE_PREFS_DIR/colors/sourcery.icls"           "$LOCAL_PREFS_DIR/colors/sourcery.icls"           
+cp "$RUBYMINE_PREFS_DIR/keymaps/sourcery.xml"           "$LOCAL_PREFS_DIR/keymaps/sourcery.xml"           
+                                                                                                    
+cp "$RUBYMINE_PREFS_DIR/options/code.style.schemes.xml" "$LOCAL_PREFS_DIR/options/code.style.schemes.xml" 
+cp "$RUBYMINE_PREFS_DIR/options/color.scheme.xml"       "$LOCAL_PREFS_DIR/options/colors.scheme.xml"      
+cp "$RUBYMINE_PREFS_DIR/options/editor.xml"             "$LOCAL_PREFS_DIR/options/editor.xml"             
+cp "$RUBYMINE_PREFS_DIR/options/ide.general.xml"        "$LOCAL_PREFS_DIR/options/ide.general.xml"        
+cp "$RUBYMINE_PREFS_DIR/options/keymap.xml"             "$LOCAL_PREFS_DIR/options/keymap.xml"             
+                                                                                                    
+cp "$RUBYMINE_PREFS_DIR/templates/Ruby.xml"             "$LOCAL_PREFS_DIR/templates/Ruby.xml"             
+cp "$RUBYMINE_PREFS_DIR/templates/user.xml"             "$LOCAL_PREFS_DIR/templates/user.xml"             
+
