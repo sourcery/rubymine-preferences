@@ -20,7 +20,7 @@ cp "$LOCAL_PREFS_DIR/colors/sourcery.icls"           "$RUBYMINE_PREFS_DIR/colors
 cp "$LOCAL_PREFS_DIR/keymaps/sourcery.xml"           "$RUBYMINE_PREFS_DIR/keymaps/sourcery.xml"
      
 cp "$LOCAL_PREFS_DIR/options/code.style.schemes.xml" "$RUBYMINE_PREFS_DIR/options/code.style.schemes.xml"
-cp "$LOCAL_PREFS_DIR/options/colors.scheme.xml"      "$RUBYMINE_PREFS_DIR/options/color.scheme.xml"
+cp "$LOCAL_PREFS_DIR/options/colors.scheme.xml"      "$RUBYMINE_PREFS_DIR/options/colors.scheme.xml"
 cp "$LOCAL_PREFS_DIR/options/editor.xml"             "$RUBYMINE_PREFS_DIR/options/editor.xml"
 cp "$LOCAL_PREFS_DIR/options/ide.general.xml"        "$RUBYMINE_PREFS_DIR/options/ide.general.xml"
 cp "$LOCAL_PREFS_DIR/options/keymap.xml"             "$RUBYMINE_PREFS_DIR/options/keymap.xml"
