@@ -6,11 +6,14 @@ RUBYMINE_PREFS_DIR=$HOME/Library/Preferences/RubyMine70
 BIN_DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 LOCAL_PREFS_DIR="$BIN_DIR/../RubyMine70"
 
-mkdir -p "$LOCAL_PREFS_DIR/colors"
-mkdir -p "$LOCAL_PREFS_DIR/templates"
-mkdir -p "$LOCAL_PREFS_DIR/codestyles"
-mkdir -p "$LOCAL_PREFS_DIR/keymaps"
-mkdir -p "$LOCAL_PREFS_DIR/options"
+echo "Copying FROM directory: $LOCAL_PREFS_DIR"
+echo "Copying TO RubyMine prefs directory: $RUBYMINE_PREFS_DIR"
+
+mkdir -p "$RUBYMINE_PREFS_DIR/colors"
+mkdir -p "$RUBYMINE_PREFS_DIR/templates"
+mkdir -p "$RUBYMINE_PREFS_DIR/codestyles"
+mkdir -p "$RUBYMINE_PREFS_DIR/keymaps"
+mkdir -p "$RUBYMINE_PREFS_DIR/options"
 
 cp "$LOCAL_PREFS_DIR/codestyles/sourcery.xml"        "$RUBYMINE_PREFS_DIR/codestyles"
 cp "$LOCAL_PREFS_DIR/colors/sourcery.icls"           "$RUBYMINE_PREFS_DIR/colors/sourcery.icls"
